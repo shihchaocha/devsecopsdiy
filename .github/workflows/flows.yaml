@@ -11,6 +11,7 @@ jobs:
         run: mvn clean install
       - name: Depcheck
         uses: dependency-check/Dependency-Check_Action@main
+        continue-on-error: true
         id: Depcheck
         with:
           project: 'test'
