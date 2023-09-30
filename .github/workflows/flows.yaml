@@ -50,6 +50,7 @@ jobs:
           path: ${{github.workspace}}/reports
   build_and_push:
     name: Build & Push to DockerHub
+    needs: slscan
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
