@@ -11,7 +11,8 @@ public class DemoApplication {
 
 	@GetMapping("/")
 	public String hello() {
-		return "<html><body><h1>Hello DevSecOps</body></h1></html>";
+		String result = "<html><body><h1>Hello DevSecOps</body></h1></html>";
+		return result;
 	}
 	
 	public static void main(String[] args) {
