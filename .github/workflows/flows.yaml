@@ -60,8 +60,8 @@ jobs:
         uses: snyk/actions/maven-3-jdk-17@master
         continue-on-error: true
         env:
+          JAVA_HOME: /opt/jdk
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}  
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
   slscan:     
     runs-on: ubuntu-latest
     name: Perform SL Scan
